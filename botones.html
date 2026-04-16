@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Botón de Colores</title>
+
+<style>
+    button{
+        padding:15px 30px;
+        font-size:18px;
+        border:none;
+        cursor:pointer;
+        background-color:blue;
+        color:white;
+    }
+</style>
+</head>
+
+<body>
+
+<h2>Cambiar Color</h2>
+
+<button onclick="cambiarColor()" id="boton">
+    Hacer click
+</button>
+
+<script>
+function cambiarColor(){
+    let boton = document.getElementById("boton");
+
+    if(boton.style.backgroundColor == "red"){
+        boton.style.backgroundColor = "blue";
+    }else{
+        boton.style.backgroundColor = "red";
+    }
+}
+</script>
+
+</body>
+</html>
